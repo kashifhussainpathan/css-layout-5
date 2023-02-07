@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +16,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+    height: 100vh;
+}
+
 .navigation {
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
-    height: 5rem;
+    height: 10vh;
 }
 
 .logo {
@@ -45,11 +51,16 @@ body {
     gap: 2rem;
     font-weight: 600;
     margin-left: 2em;
+    font-family: "Poppins";
 }
 
 .logo,
 .list-item {
     cursor: pointer;
+}
+
+.list li:hover {
+    color: var();
 }
 
 .button-small {
@@ -58,4 +69,49 @@ body {
     background-color: var(--color-primary);
     border-radius: 0.5rem;
     color: #fff;
+    cursor: pointer;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+
+
+.hero-heading {
+    max-width: 846px;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.hero-description {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: #ffffff;
+}
+
+.button-large {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    border: none;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    font-family: "Poppins";
+    cursor: pointer;
 }
