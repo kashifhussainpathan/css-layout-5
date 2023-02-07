@@ -6,6 +6,56 @@
     box-sizing: border-box;
 }
 
-body{
+:root {
+    --color-primary: #ba0cc5;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    height: 5rem;
+}
+
+.logo {
+    width: 120px;
+}
+
+.grow-list {
+    flex-grow: 1;
+}
+
+.line {
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 2rem;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 2rem;
+    font-weight: 600;
+    margin-left: 2em;
+}
+
+.logo,
+.list-item {
+    cursor: pointer;
+}
+
+.button-small {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+    color: #fff;
 }
